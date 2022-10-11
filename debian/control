@@ -1,0 +1,72 @@
+Source: libpst
+Section: utils
+Priority: optional
+Maintainer: Paul Wise <pabs@debian.org>
+Build-Depends:
+ autoconf-archive,
+ debhelper-compat (= 13),
+#for buildflags.mk
+ dpkg-dev (>= 1.16.1~),
+#for pst2dii
+ imagemagick,
+ libgd-dev,
+ libgsf-1-dev,
+Standards-Version: 4.5.1
+Homepage: https://www.five-ten-sg.com/libpst/
+Vcs-Browser: https://salsa.debian.org/debian/libpst
+Vcs-Git: https://salsa.debian.org/debian/libpst.git
+Rules-Requires-Root: no
+
+Package: libpst-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends:
+ libpst4 (=${binary:Version}),
+ ${misc:Depends},
+Breaks:
+ libpst4 (<= 0.6.54-3),
+Replaces:
+ libpst4 (<= 0.6.54-3),
+Description: library for reading Microsoft Outlook PST files (development files)
+ Library for accessing data from Microsoft Outlook PST files.
+ .
+ This package include the files needed for developing with libpst,
+ including the headers, static library and documentation.
+
+Package: libpst4
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends:
+ ${misc:Pre-Depends},
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: library for reading Microsoft Outlook PST files
+ Library for accessing data from Microsoft Outlook PST files.
+ .
+ This package include the libpst shared library used by applications.
+
+Package: pst-utils
+Architecture: any
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Breaks:
+ readpst (<= 0.5.3-1),
+Replaces:
+ readpst (<= 0.5.3-1),
+Suggests:
+ mb2md,
+Description: tools for reading Microsoft Outlook PST files
+ This package contains tools based on libpst to read data from Microsoft
+ Outlook PST files.
+   * readpst - export data from PST files to a variety of formats, including
+     mbox, MH and KMail. Other packages like mb2md are available for subsequent
+     conversions to Maildir and other formats.
+   * lspst - list data in PST files.
+   * pst2ldif - extract contacts from a PST file and prepare them for input in
+     LDAP
+   * pst2dii - export data from PST files to Summation dii load file format

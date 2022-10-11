@@ -1,0 +1,20 @@
+<map id="pst_item" name="pst_item">
+<area shape="rect" id="node2" href="$structpst__item__contact.html" title="This contains the contact related mapi elements. " alt="" coords="592,832,727,859"/>
+<area shape="rect" id="node3" href="$structFILETIME.html" title="FILETIME" alt="" coords="257,476,336,503"/>
+<area shape="rect" id="node13" href="$structpst__item__email.html" title="This contains the email related mapi elements. " alt="" coords="598,1461,721,1488"/>
+<area shape="rect" id="node16" href="$structpst__item__appointment.html" title="This contains the appointment related mapi elements. " alt="" coords="575,960,744,987"/>
+<area shape="rect" id="node17" href="$structpst__item__journal.html" title="This contains the journal related mapi elements. " alt="" coords="594,536,725,563"/>
+<area shape="rect" id="node4" href="$structpst__string.html" title="The string is either utf8 encoded, or it is in the code page specified by the containing mapi object..." alt="" coords="253,1023,340,1049"/>
+<area shape="rect" id="node10" href="$structpst__item__attach.html" title="This contains the attachment related mapi elements. " alt="" coords="596,1185,723,1212"/>
+<area shape="rect" id="node5" href="$structpst__file.html" title="pst_file" alt="" coords="625,281,694,308"/>
+<area shape="rect" id="node6" href="$structpst__x__attrib__ll.html" title="Linked list of extended attributes. " alt="" coords="239,281,354,308"/>
+<area shape="rect" id="node7" href="$structpst__index__ll.html" title="pst_index_ll" alt="" coords="5,333,105,360"/>
+<area shape="rect" id="node9" href="$structpst__desc__tree.html" title="pst_desc_tree" alt="" coords="241,192,353,219"/>
+<area shape="rect" id="node11" href="$structpst__id2__tree.html" title="pst_id2_tree" alt="" coords="245,1181,348,1208"/>
+<area shape="rect" id="node8" href="$structpst__block__recorder.html" title="this is only used for internal debugging " alt="" coords="224,44,369,71"/>
+<area shape="rect" id="node12" href="$structpst__binary.html" title="a simple wrapper for binary blobs " alt="" coords="251,1403,342,1429"/>
+<area shape="rect" id="node14" href="$structpst__entryid.html" title="pst_entryid" alt="" coords="249,1703,344,1729"/>
+<area shape="rect" id="node18" href="$structpst__item__message__store.html" title="This contains the message store related mapi elements. " alt="" coords="567,1656,752,1683"/>
+<area shape="rect" id="node15" href="$structpst__item__extra__field.html" title="linked list of extra header fields " alt="" coords="582,1275,737,1301"/>
+<area shape="rect" id="node19" href="$structpst__item__folder.html" title="This contains the folder related mapi elements. " alt="" coords="597,1707,721,1733"/>
+</map>

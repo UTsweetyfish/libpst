@@ -1,0 +1,14 @@
+# Debian does not use .la files
+usr/lib/*/libpst.la
+# Copy of the website, duplicates packaging
+usr/share/doc/libpst-0.6.76/index.html
+# HTML manual pages
+usr/share/doc/libpst-*/rn01re0*.html
+# Already installed elsewhere
+usr/share/doc/libpst-*/AUTHORS
+usr/share/doc/libpst-*/ChangeLog
+usr/share/doc/libpst-*/NEWS
+# Duplicates common-licenses GPL-2
+usr/share/doc/libpst-*/COPYING
+# Only contains build instructions
+usr/share/doc/libpst-*/README

@@ -1,0 +1,6 @@
+<map id="pst_item_attach" name="pst_item_attach">
+<area shape="rect" id="node2" href="$structpst__id2__tree.html" title="pst_id2_tree" alt="" coords="5,96,108,123"/>
+<area shape="rect" id="node3" href="$structpst__index__ll.html" title="pst_index_ll" alt="" coords="7,5,107,32"/>
+<area shape="rect" id="node4" href="$structpst__string.html" title="The string is either utf8 encoded, or it is in the code page specified by the containing mapi object..." alt="" coords="189,96,276,123"/>
+<area shape="rect" id="node5" href="$structpst__binary.html" title="a simple wrapper for binary blobs " alt="" coords="301,96,391,123"/>
+</map>

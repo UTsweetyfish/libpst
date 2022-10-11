@@ -1,0 +1,4 @@
+<map id="pst_item_journal" name="pst_item_journal">
+<area shape="rect" id="node2" href="$structFILETIME.html" title="FILETIME" alt="" coords="5,5,84,32"/>
+<area shape="rect" id="node3" href="$structpst__string.html" title="The string is either utf8 encoded, or it is in the code page specified by the containing mapi object..." alt="" coords="108,5,195,32"/>
+</map>

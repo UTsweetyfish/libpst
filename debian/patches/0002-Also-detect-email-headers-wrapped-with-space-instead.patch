@@ -1,0 +1,29 @@
+From 5bab55d0984fa6b41d8735a3e0633a219e713497 Mon Sep 17 00:00:00 2001
+From: Paul Wise <pabs3@bonedaddy.net>
+Date: Sun, 30 May 2021 09:49:57 +0800
+Subject: [PATCH 2/3] Also detect email headers wrapped with space instead of
+ tab
+
+Spaces are commonly used for email header wrapping.
+---
+ src/readpst.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/src/readpst.c b/src/readpst.c
+index 8de8fef9c..6f9455297 100644
+--- a/src/readpst.c
++++ b/src/readpst.c
+@@ -1275,8 +1275,10 @@ int  header_match(char *header, char*field) {
+     if (strncasecmp(header, field, n) == 0) return 1;   // tag:{space}
+     if ((field[n-1] == ' ') && (strncasecmp(header, field, n-1) == 0)) {
+         char *crlftab = "\r\n\t";
++        char *crlfspc = "\r\n ";
+         DEBUG_INFO(("Possible wrapped header = %s\n", header));
+         if (strncasecmp(header+n-1, crlftab, 3) == 0) return 1; // tag:{cr}{lf}{tab}
++        if (strncasecmp(header+n-1, crlfspc, 3) == 0) return 1; // tag:{cr}{lf}{space}
+     }
+     return 0;
+ }
+-- 
+2.32.0
+

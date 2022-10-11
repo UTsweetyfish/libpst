@@ -1,0 +1,3 @@
+0001-Add-debugging-for-header-detection.patch
+0002-Also-detect-email-headers-wrapped-with-space-instead.patch
+0003-Detect-reasonable-email-headers-too.patch
